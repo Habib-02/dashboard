@@ -1,0 +1,73 @@
+.trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: var(--color-bg);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.bellIcon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-text);
+  transition: color 0.2s ease;
+}
+
+/* Notification badge */
+.trigger::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  background-color: #ef4444;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.content {
+  min-width: 280px;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px var(--shadow-color-2),
+    0 4px 6px -2px var(--shadow-color-1);
+  padding: 8px;
+  z-index: 1;
+  animation: slideIn 0.2s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  font-size: calc(14 / 16 * 1rem);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  user-select: none;
+}
+
+.item:hover,
+.item:focus {
+  background-color: var(--color-bg-hover);
+}

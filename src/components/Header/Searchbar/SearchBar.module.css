@@ -1,0 +1,20 @@
+.searchGroup {
+  position: relative;
+}
+
+.searchGroup input {
+  padding: 8px 12px;
+  padding-left: 40px;
+  font-size: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+}
