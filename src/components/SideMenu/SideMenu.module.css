@@ -22,8 +22,46 @@
   padding: 0;
 }
 
+.navItem {
+  margin: 8px 0;
+}
+
 .navLink {
   color: var(--color-text);
   font-weight: 600;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  transition: all 0.1s ease-in;
+
+  position: relative;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+.navLink:hover {
+  background-color: var(--color-primary);
+  color: var(--color-body);
+}
+
+.navLink::before {
+  content: "";
+  width: 10px;
+  height: 100%;
+  border-radius: 16px;
+  background-color: var(--color-primary);
+
+  position: absolute;
+  left: -24px;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.navLink:hover::before {
+  display: block;
 }
