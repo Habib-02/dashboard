@@ -1,0 +1,29 @@
+.sideMenu {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+  background-color: var(--color-bg);
+  min-width: 240px;
+  min-height: 100vh;
+
+  padding: 16px 24px;
+}
+
+.logo h1 {
+  font-weight: 800;
+  text-align: center;
+}
+
+.logo span:first-of-type {
+  color: var(--color-primary);
+}
+
+.sideMenu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navLink {
+  color: var(--color-text);
+  font-weight: 600;
+  text-decoration: none;
+}

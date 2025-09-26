@@ -12,7 +12,7 @@ function Header() {
   return (
     <header className={styles.header}>
       <div className="menu">
-        <Menu />
+        <Menu className={styles.menuIcon} />
         <VisuallyHidden>Menu Button</VisuallyHidden>
       </div>
       <div className={styles.searchBar}>

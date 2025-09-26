@@ -1,12 +1,22 @@
 .header {
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
   padding: 16px 30px;
   background-color: var(--color-bg);
 
   display: flex;
   align-items: center;
   gap: 16px;
+  box-shadow: 0 10px 15px -3px var(--shadow-color-2),
+    0 4px 6px -2px var(--shadow-color-1);
+}
+
+.menuIcon {
+  min-width: 24px;
+  min-height: 24px;
 }
 
 .searchBar {
   margin-right: auto;
+  width: 100%;
 }

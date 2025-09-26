@@ -77,6 +77,8 @@ h6 {
 /* Custom Properties */
 :root {
   /* Colors */
+  --color-primary: hsl(222, 100%, 64%);
+
   --color-bg: #ffffff;
   --color-body: #f5f6fa;
   --color-border: #d1d5db;
