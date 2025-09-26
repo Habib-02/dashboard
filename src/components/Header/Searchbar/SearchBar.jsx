@@ -1,8 +1,6 @@
 import { Search } from "lucide-react";
 import styles from "./SearchBar.module.css";
 
-console.log(styles);
-
 function SearchBar() {
   return (
     <form className={styles.form}>
